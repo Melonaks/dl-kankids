@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 
 from get_episodes_list import get_episodes_list
-from get_episode_ims import get_episode_manifest_url
+from get_episode_ism import get_episode_manifest_url
 from downloader import download
 
 
