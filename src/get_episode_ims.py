@@ -18,10 +18,8 @@ def get_episode_manifest_url(episodes):
 
         url = e.get('url')
         driver.get(url)
-        print(f"Opening {url}")
 
         # Clicking Play button/area in order to trigger Manifest.ims request
-
         for action in ["rgpl-action-area", "rgpl-btn-play"]:
             element = WebDriverWait(driver, 10).until(
                 expected_conditions.presence_of_element_located((By.CLASS_NAME, action))

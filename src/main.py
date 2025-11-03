@@ -53,11 +53,8 @@ if __name__ == "__main__":
 
     validate_input_args()
 
-    # season_url = sys.argv[1]
-    # download_path = Path(sys.argv[2])
-    season_url = "https://www.kankids.org.il/content/kids/hinuchit-main/its_me/"
-    download_path = Path("D:\downloads")
-
+    season_url = sys.argv[1]
+    download_path = Path(sys.argv[2])
 
     download_folder = prepare_folder(season_url, download_path)
     episodes = get_episodes_manifests(season_url)
